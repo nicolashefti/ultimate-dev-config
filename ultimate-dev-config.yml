@@ -1,0 +1,17 @@
+---
+- name: Install dnsmasq
+  hosts: localhost
+  roles:
+  - dnsmasq
+
+- name: Add vhosts configuration
+  hosts: localhost
+  tasks:
+    - copy: src=sites-vhosts.conf dest=/etc/apache2/other/sites-vhosts.conf
+  sudo: yes
+
+- name: Restart Apache
+  hosts: localhost
+  tasks:
+    - shell: apachectl restart
+  sudo: yes
