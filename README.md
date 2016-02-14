@@ -6,6 +6,6 @@ More about it on [my blog](http://nicolas.hefti.fr/blog/2016/02/14/ultimate-dev-
 
 ## How to use it
 
-1. Download/clone the repository[^3],
+1. Download/clone the repository,
 2. Copy sites-vhost.conf.tpl to sites-vhost.conf and update it according to your personal configuration,
-3. Run the playbook with ```ansible-playbook ultimate-dev-config.yml```.
+3. Run the playbook with ```./config.sh```.
