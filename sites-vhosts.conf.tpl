@@ -2,11 +2,11 @@
 
     ServerAlias *.dev
     ServerName sites-vhosts.dev
-    VirtualDocumentRoot /Users/nicolashefti/Sites/%-2+/htdocs
+    VirtualDocumentRoot /Users/{USERNAME}/Sites/%-2+/htdocs
 
-    ErrorLog "/Users/nicolashefti/Sites/sites-conf/sites-error_log"
+    ErrorLog "/Users/{USERNAME}/Sites/sites-conf/sites-error_log"
     
-    <Directory "/Users/nicolashefti/Sites/*">
+    <Directory "/Users/{USERNAME}/Sites/*">
         Options Indexes FollowSymLinks MultiViews
         AllowOverride All
         Order allow,deny

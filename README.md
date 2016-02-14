@@ -1,19 +1,11 @@
-# yosemite-config
-Reproductible Mac OS Yosemite configuration for web development
+# Ultimate dev machine configuration
 
-##
+Reproductible Mac OS X configuration for web development
 
-## Execute playbook
+More about it on [my blog](http://nicolas.hefti.fr/blog/2016/02/14/ultimate-dev-machine-configuration.html)
 
-ansible-playbook playbook/webdev-config.yml
+## How to use it
 
-## Source
-
-### Ansible
-
-- [Setup dev machine with Ansible](https://steveedson.co.uk/ansible/dev-machine/)
-
-### Dnsmasq
-
-- [Dnsmasq article](https://passingcuriosity.com/2013/dnsmasq-dev-osx/)
-- [Ansible Dnsmasq role](https://github.com/norm/ansible-role-osx-dnsmasq)
+1. Download/clone the repository[^3],
+2. Copy sites-vhost.conf.tpl to sites-vhost.conf and update it according to your personal configuration,
+3. Run the playbook with ```ansible-playbook ultimate-dev-config.yml```.
